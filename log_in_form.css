@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: #060125;
+    background-color: #08003a;
     font-family: Arial, sans-serif;
 }
 
@@ -25,8 +25,60 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #000000;
+    border:#3d385d solid 2px;
     width: 60%;
-    
+    border-radius: 6px;
+    margin: 0 auto;
+}
 
+.log_in_box_username {
+    color: azure;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.text_input {
+    color: #000000;
+    margin: 10px; 
+    box-sizing: border-box;
+    width: auto;
+    padding: 8px 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.log_in_box_email {
+    color: azure;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.log_in_box_password {
+    color: azure;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#togglePassword {
+    cursor: pointer;
+    color: azure;
+    font-size: 1rem;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.submit {
+    background-color: #3d385d;
+    color: azure;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+.submit:hover{
+    background-color: #08003a;
 }

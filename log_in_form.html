@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="log_in_form.css">
 </head>
 <body>
+    <form>
     <h1 class="heading_text">Log In</h1>
-    <div class="log_in_box"></div>
+    <div class="log_in_box">
+        <label class="log_in_box_username" for="username">Username :</label>
+        <input class="text_input" type="text" id="username" name="username" placeholder="Please create a username" required>
+        <label class="log_in_box_email" for="email">Email :</label>
+        <input class="text_input" for="email" id="email" name="email" placeholder="Please enter your email" required>
+        <label class="log_in_box_password" for="password">Password :</label>
+        <input class="text_input" type="password" id="password" name="password" placeholder="Please create a password">
+        <i onclick="togglePasswordVisibility()" id="togglePassword">Show</i>
+        <script src="log_in_form.js"></script>
+        <input class="submit" type="submit">
+    </div>
+
+</form>
 </body>
 </html>
+<!--initialize-->
