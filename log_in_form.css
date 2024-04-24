@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    min-width: 0px;
+}
+
+body {
+    background-color: #060125;
+    font-family: Arial, sans-serif;
+}
+
+.heading_text {
+    text-align: center;
+    font-size: 3rem;
+    color: azure;
+}
+
+.log_in_box {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 60%;
+    
+
+}
