@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="log_in_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
-    <form>
-    <h1 class="heading_text">Log In</h1>
-    <div class="log_in_box">
-        <label class="log_in_box_username" for="username">Username :</label>
-        <input class="text_input" type="text" id="username" name="username" placeholder="Please create a username" required>
-        <label class="log_in_box_email" for="email">Email :</label>
-        <input class="text_input" for="email" id="email" name="email" placeholder="Please enter your email" required>
-        <label class="log_in_box_password" for="password">Password :</label>
-        <input class="text_input" type="password" id="password" name="password" placeholder="Please create a password">
-        <i onclick="togglePasswordVisibility()" id="togglePassword">Show</i>
-        <script src="log_in_form.js"></script>
-        <input class="submit" type="submit">
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="form-container log-in">
+            <form>
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Log In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-</form>
+    <script src="log_in_form.js"></script>
 </body>
+
 </html>
-<!--initialize-->
